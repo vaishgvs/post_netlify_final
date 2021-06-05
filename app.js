@@ -14,7 +14,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
 //issue here. on fetch, form data not getting appended to the url like it normally should with a GET, hence trying POST
 */
 
-const abc = { username: 'example' };
+//const abc = { username: 'example' };
 
 //POST Request
 document.getElementById('form').addEventListener('submit', (event) => {
@@ -27,23 +27,24 @@ document.getElementById('form').addEventListener('submit', (event) => {
         {method: 'POST',
         //mode: "no-cors",
         cache:"no-cache",
-        /*headers: {
+        headers: {
             'Content-Type':'application/json'
-        },*/
-        //body: JSON.stringify(value),
-        body: data
+        },
+        body: JSON.stringify(value),
+        //body: data
     })
     //.then(res => {return res.text})
     //.then(text => {console.log(text)});
     .then(res => {
-        //res.json();
+        return res.json();
         console.log("response came");
         console.log(res);
     })
-    .then(abc => {
-            document.getElementById("sum").value = abc;
+    .then(data => {
+            document.getElementById("sum").value = data.Sum;
+            //Sum or something that's returning the parameter Sum
             console.log("this is the sum response");
-            console.log(abc);
+            console.log(Sum);
         });
         //console.log(JSON.parse(res));
 
