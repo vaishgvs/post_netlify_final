@@ -23,7 +23,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
     const value = Object.fromEntries(data.entries());
     console.log({value});
     
-    fetch("https://blissful-noether-932fd7.netlify.app/.netlify/functions/sum", 
+    fetch("/.netlify/functions/sum", 
         {method: 'POST',
         //mode: "no-cors",
         cache:"no-cache",
