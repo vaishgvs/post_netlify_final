@@ -37,13 +37,13 @@ document.getElementById('form').addEventListener('submit', (event) => {
         return res.json();
         console.log("response came");
         console.log(res);
-    });
-    /*.then(data => {
+    })
+    .then(data => {
             document.getElementById("sum").value = data.Sum;
             //Sum or something that's returning the parameter Sum
             console.log("this is the sum response");
             console.log(Sum);
-        });*/
+        });
         //console.log(JSON.parse(res));
 
         //response that is assigned to sum should be referenced by the corresponding header
