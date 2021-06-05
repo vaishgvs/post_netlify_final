@@ -42,7 +42,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
             document.getElementById("sum").value = data.Sum;
             //Sum or something that's returning the parameter Sum
             console.log("this is the sum response");
-            console.log(Sum);
+            console.log(data.Sum);
         });
         //console.log(JSON.parse(res));
 
