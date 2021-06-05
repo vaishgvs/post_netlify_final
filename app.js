@@ -33,8 +33,6 @@ document.getElementById('form').addEventListener('submit', (event) => {
         body: JSON.stringify(value),
         //body: data
     })
-    //.then(res => {return res.text})
-    //.then(text => {console.log(text)});
     .then(res => {
         return res.json();
         console.log("response came");

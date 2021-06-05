@@ -8,12 +8,12 @@ exports.handler = async (event, context) => {
     const sum = parseInt(num1) + parseInt(num2);
     var sum2 = JSON.stringify(sum);
 
-    return {
+    /*return {
         statusCode: 200,
         body: sum2,
-    };
-    /*return {
+    };*/
+    return {
       statusCode: 200,
       body: `Sum is: ` + sum2 ,
-    };*/
+    };
   };
