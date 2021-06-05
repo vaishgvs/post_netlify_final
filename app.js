@@ -25,7 +25,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
     
     fetch("https://blissful-noether-932fd7.netlify.app/.netlify/functions/sum", 
         {method: 'POST',
-        mode: "no-cors",
+        //mode: "no-cors",
         cache:"no-cache",
         /*headers: {
             'Content-Type':'application/json'
