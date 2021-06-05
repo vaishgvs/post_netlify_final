@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Website</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body class="light-theme">
+        <h1>Enter 2 numbers to calculate their Sum:</h1>
+        <!--<form action="lambda function endpoint" method="POST" name="MyForm" data-netlify="true" id="form">-->
+        <form name="MyForm" data-netlify="true" id="form">
+            <label for="no1">First Number:</label><br>
+            <input type="number" id="no1" name="First_Number"><br>
+            <label for="no2">Second Number:</label><br>
+            <input type="number" id="no2" name="Second_Number"><br><br>
+            <input type="submit" value="submit"><br><br>
+            <label for="sum">Sum:</label><br>
+            <input type="sum" id="sum" name="Sum"><br>
+        </form>
+        <p id="log"></p>
+        <script src="app.js"></script>
+        <noscript>You need to enable Javascript to view the full site</noscript>
+    </body>
+</html>
