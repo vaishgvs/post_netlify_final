@@ -34,7 +34,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
         //body: data
     })
     .then(res => {
-        //return res.json();
+        return res.json();
         console.log("response came");
         console.log(res);
     });
