@@ -1,7 +1,7 @@
 exports.handler = async (event, context) => {
     //const num1 = event.body.First_Number;
     //const num2 = event.body.Second_Number;
-    const body = JSON.parse(event.body).payload;
+    //const body = JSON.parse(event.body).payload;
 
     const num1 = event.queryStringParameters.First_Number;
     const num2 = event.queryStringParameters.Second_Number;
@@ -14,6 +14,6 @@ exports.handler = async (event, context) => {
     };*/
     return {
       statusCode: 200,
-      body: `Sum is: ` + sum2 ,
+      //body: `Sum is: ` + sum2 ,
     };
   };
