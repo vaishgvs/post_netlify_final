@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
     const body = JSON.parse(event.body).payload;
 
     const num1 = event.queryStringParameters.First_Number;
-    const num2 = event.queryStringParameters.First_Number;
+    const num2 = event.queryStringParameters.Second_Number;
     const sum = parseInt(num1) + parseInt(num2);
     var sum2 = JSON.stringify(sum);
 
