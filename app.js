@@ -37,10 +37,12 @@ document.getElementById('form').addEventListener('submit', (event) => {
     //.then(text => {console.log(text)});
     .then(res => {
         //res.json();
+        console.log("response came");
         console.log(res);
     })
     .then(abc => {
             document.getElementById("sum").value = abc;
+            console.log("this is the sum response");
             console.log(abc);
         });
         //console.log(JSON.parse(res));
